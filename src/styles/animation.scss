@@ -1,0 +1,72 @@
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(3deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes background_movingX {
+  0% {
+    background-position-x: 0;
+  }
+  50% {
+    background-attachment: fixed;
+    background-position-x: 10px;
+  }
+  100% {
+    background-position-x: 0;
+  }
+}
+
+@keyframes flySpace {
+  0% {
+    transform: rotate(0deg) translateX(0) translateY(0);
+    background-position-x: 0;
+  }
+  50% {
+    transform: rotate(-3deg) translateY(50px);
+  }
+  100% {
+    transform: rotate(0deg) translateX(0) translateY(0);
+  }
+}
+
+.animate__rotate {
+  animation: rotate 4s infinite;
+}
+
+.animate_background_movingX {
+  animation: background_movingX 5s infinite;
+}
+
+.animate_fly_space {
+  animation: flySpace 5s infinite;
+}
+
+.delay-2000 {
+  animation-delay: 2000ms;
+}
+
+.delay-1500 {
+  animation-delay: 1500ms;
+}
+
+@for $var from 1 through 10 {
+  .duration-#{$var * 500} {
+    animation-duration: #{$var * 500}ms;
+  }
+}
