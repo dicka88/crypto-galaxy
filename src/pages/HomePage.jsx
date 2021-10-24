@@ -6,25 +6,22 @@ import PlanSection from '../components/sections/PlanSection'
 import WhyChooseUsSection from '../components/sections/WhyChooseUsSection'
 import TransactionHistorySection from '../components/sections/TransactionHistorySection'
 import StartMiningSection from '../components/sections/StartMiningSection'
-import styled from 'styled-components'
 
-import backroundImage from '../assets/img/particles/bg.png'
 
 export default function HomePage() {
-  const MainBackground = styled.div`
-
-  `
   return (
-    <MainBackground>
-      <Header />
-      <main className="relative container px-14">
-        <HeroSection />
-        <PlanSection />
-        <WhyChooseUsSection />
-        <TransactionHistorySection />
-        <StartMiningSection />
-      </main>
+    <>
+      <div class="container mx-auto">
+        <main className="relative px-4 md:px-14">
+          <Header />
+          <HeroSection />
+          <PlanSection />
+          <WhyChooseUsSection />
+          <TransactionHistorySection />
+          <StartMiningSection />
+        </main>
+      </div>
       <Footer />
-    </MainBackground>
+    </>
   )
 }
