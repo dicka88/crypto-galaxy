@@ -20,18 +20,18 @@ export default function PlanSection() {
       <div className="flex flex-wrap justify-center relative pt-10">
         <BlurEffectParticle className="animate-pulse duration-5000" color="#B4A1E7" right="-20px" top="100px" />
         <BlurEffectParticle className="animate-pulse duration-3000" color="#A382FF" left="-20px" bottom="100px" />
-        <div className="inline-block">
-          <div className="inline-block">
+        <div className="flex justify-center flex-wrap">
+          <div className="block md:inline-block sm:mx-4 md:mx-6">
             <Slide left>
               <PlanCard title="Moon" icon={moonIcon} price="0.0001"></PlanCard>
             </Slide>
           </div>
-          <div className="inline-block">
+          <div className="block md:inline-block sm:mx-4 md:mx-6">
             <Slide className="inline-block" bottom>
               <PlanCard title="Planet" icon={saturnIcon} price="0.0003"></PlanCard>
             </Slide>
           </div>
-          <div className="inline-block">
+          <div className="block md:inline-block sm:mx-4 md:mx-6">
             <Slide className="inline-block" right>
               <PlanCard title="Star" icon={starIcon} price="0.0010"></PlanCard>
             </Slide>

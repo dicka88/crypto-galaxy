@@ -19,8 +19,8 @@ export default function TransactionTable({ data, link }) {
           </div>
           <div className="p-4">
             <ul>
-              {data.map(({ tx_hash, name }) =>
-                <li className="mb-4">
+              {data.map(({ tx_hash, name }, i) =>
+                <li key={i} className="mb-4">
                   <span className="block font-bold" style={{ color: "#E1D4FF" }}>{name}</span>
                   <span className="block" style={{ color: '#A393C7' }}>{tx_hash}</span>
                 </li>
@@ -34,8 +34,8 @@ export default function TransactionTable({ data, link }) {
           </div>
           <div className="p-4">
             <ul>
-              {data.map(({ timestamp, amount }) =>
-                <li className="mb-4">
+              {data.map(({ timestamp, amount }, i) =>
+                <li key={i} className="mb-4">
                   <span className="block font-bold" style={{ color: "#E1D4FF" }}>{amount}</span>
                   <span className="block" style={{ color: '#A393C7' }}>{timestamp}</span>
                 </li>

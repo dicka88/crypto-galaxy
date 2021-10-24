@@ -9,6 +9,7 @@ import SecurityIcon from '@/assets/img/icons/security_icon.svg'
 
 import ServiceCardItem from '@/components/cards/ServiceCardItem'
 import StarLightParticle from "../particles/StarLightParticle"
+import BlurEffectParticle from "../particles/BlurEffectParticle"
 
 
 export default function WhyChooseUsSection() {
@@ -31,23 +32,30 @@ export default function WhyChooseUsSection() {
 
   return (
     <section id="#whychooseus" className="pb-52 relative">
-      <div className="grid grid-cols-2">
-        <div>
-          <ReactSVG className="animate__rotate duration-4000" src={AstronautWitchIllustration} />
+      <div className="grid md:grid-cols-2">
+        <div className="relative pr-8 md:pr-28 mb-16">
+          <BlurEffectParticle color="#936AFF" />
+          <BlurEffectParticle color="#936AFF" className="animate-pulse" right="30%" bottom="20%" />
+          <ReactSVG
+            beforeInjection={(svg) => {
+              svg.setAttribute('style', 'width: 100%;height:100%;')
+            }}
+            className="animate__rotate duration-4000 max-w-full" src={AstronautWitchIllustration} />
         </div>
-        <div className="pr-24">
-          <div className="pb-8" style={{ maxWidth: '510px' }}>
+        <div className="relative order-1 lg:pr-24">
+          <BlurEffectParticle top="0" right="0" />
+          <div className="pb-8 text-center md:text-left" style={{ maxWidth: '510px' }}>
             <div className="relative inline-block">
               <StarLightParticle className="animate-spin duration-5000" top="-50px" left="-50px" />
               <h1 className="section-subtitle">
                 Why Must Choose Us?
               </h1>
             </div>
-            <p class="tracking-widest">We will give you the reasons why you should choose us</p>
+            <p className="tracking-widest">We will give you the reasons why you should choose us</p>
           </div>
           <div>
             {services.map((props, i) =>
-              <div className="block">
+              <div key={i} className="block">
                 <Fade bottom delay={i * 500}>
                   <ServiceCardItem className="hover:-translate-y-2 hover:scale-105 transition-all" {...props} />
                 </Fade>

@@ -1,6 +1,7 @@
 import { Slide } from "react-reveal"
 import StarLightParticle from "../particles/StarLightParticle"
 import TransactionTable from "../tables/TransactionTable"
+import BlurEffectParticle from "../particles/BlurEffectParticle"
 
 const deposit = [
   {
@@ -92,32 +93,32 @@ const withdrawal = [
 
 export default function TransactionHistorySection() {
   return (
-    <section className="container pb-52 px-10 relative">
-      <div className="text-center pb-14">
+    <section className="pb-52 md:px-10 relative">
+      <div className="relative text-center mb-10">
         <div className="relative inline-block">
           <StarLightParticle className="animate-spin duration-5000" top="-50px" left="-50px" />
-          <h1 className="section-title">
-            Transaction History
-          </h1>
+          <h1 className="section-title">Transaction History</h1>
         </div>
         <p>We will provide proof of transactions from users</p>
       </div>
-      <div className="grid grid-cols-2">
-        <div>
-          <div className="text-center">
+      <div className="relative grid md:grid-cols-2">
+        <BlurEffectParticle />
+        <BlurEffectParticle bottom="0" right="0" />
+        <div className="mb-12">
+          <div className="text-center mb-8">
             <h2>Deposit</h2>
           </div>
-          <div className="px-12">
+          <div className="md:px-12">
             <Slide left>
               <TransactionTable data={deposit} link="/deposit" />
             </Slide>
           </div>
         </div>
-        <div>
-          <div className="text-center">
+        <div className="mb-12">
+          <div className="text-center mb-8">
             <h2>Withdrawal</h2>
           </div>
-          <div className="px-12">
+          <div className="md:px-12">
             <Slide right>
               <TransactionTable data={withdrawal} link="/withdrawal" />
             </Slide>

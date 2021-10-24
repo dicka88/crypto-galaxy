@@ -30,14 +30,14 @@ const SocialLink = styled.a`
 export default function Footer() {
   return (
     <FooterWrapper>
-      <div className="flex justify-between pt-14 pb-16 px-14">
-        <div className="flex-2">
+      <div className="flex justify-between flex-wrap pt-14 pb-16 px-14">
+        <div className="flex-2 mb-6">
           <div className="block">
             <GalaxyCryptoIconButton />
           </div>
           <p>You can start mining <br /> Cryptocurrency Coins with us</p>
         </div>
-        <div className="flex justify-between flex-wrap px-28">
+        <div className="flex mb-6 justify-between md:px-28">
           <div className="pr-28">
             <div className="block">
               <h1>About</h1>
@@ -71,7 +71,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="">
+        <div className="mb-6">
           <h1>Follow Us</h1>
           <div className="block">
             <div className="inline-flex">
