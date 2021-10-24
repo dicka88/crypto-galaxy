@@ -57,6 +57,12 @@
   animation: flySpace 5s infinite;
 }
 
+@for $i from 1 through 10 {
+  .delay-#{$i * 500} {
+    animation-delay: #{$i * 500}ms;
+  }
+}
+
 .delay-2000 {
   animation-delay: 2000ms;
 }
@@ -65,7 +71,7 @@
   animation-delay: 1500ms;
 }
 
-@for $var from 1 through 10 {
+@for $var from 1 through 20 {
   .duration-#{$var * 500} {
     animation-duration: #{$var * 500}ms;
   }
