@@ -13,7 +13,7 @@ const Ahref = styled.a`
   color: white;
   margin: 0 5px;
   font-weight: 600;
-  padding: 10px 30px; 
+  padding: 0.75rem 2rem; 
   font-size: 19px;
   vertical-align: middle;
   border: solid 2px transparent;

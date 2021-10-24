@@ -11,7 +11,7 @@ const Ahref = styled.a`
   color: white;
   margin: 0 5px;
   font-weight: 600;
-  padding: 20px 54px; 
+  padding: 1em 2em; 
   font-size: 19px;
   border: solid 3px transparent;
   background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(180deg, #B470FF, #FF368F);

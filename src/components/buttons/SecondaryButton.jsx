@@ -5,17 +5,14 @@ const Ahref = styled.a`
   &:hover {
     background: -webkit-linear-gradient(45deg, #FBFFAA,#ff10a9);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
   }
-  display: inline-flex;
-  align-items: center;
   font-weight: 600;
   transition: 0.5s;
   vertical-align: middle;
   margin: 0 5px;
   border-radius: 18px;
   color: white;
-  padding: 14px 30px;
+  padding: 0.75em 2em;
   font-size: 19px;
 `
 
