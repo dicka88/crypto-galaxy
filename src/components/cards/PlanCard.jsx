@@ -15,7 +15,6 @@ export default function PlanCard({ price, icon, title, ...props }) {
     border: 1.5px solid #473280;
     padding: 2em 4em;
     color: #d8caff;
-    margin: 0 3em;
     margin-bottom: 4em;
     display: inline-block;
     transition: 0.4s ease-in-out;
@@ -55,25 +54,25 @@ export default function PlanCard({ price, icon, title, ...props }) {
         <ul>
           <li className="block pb-4">
             <div className="inline-flex">
-              <img class="mr-12" src={ChecklistIcon} />
+              <img className="mr-12" src={ChecklistIcon} />
               <span>120% Profit</span>
             </div>
           </li>
           <li className="block pb-4">
             <div className="inline-flex">
-              <img class="mr-12" src={ChecklistIcon} />
+              <img className="mr-12" src={ChecklistIcon} />
               <span>Daily Payouts</span>
             </div>
           </li>
           <li className="block pb-4">
             <div className="inline-flex">
-              <img class="mr-12" src={ChecklistIcon} />
+              <img className="mr-12" src={ChecklistIcon} />
               <span>No Extra Fees</span>
             </div>
           </li>
           <li className="block pb-4">
             <div className="inline-flex">
-              <img class="mr-12" src={ChecklistIcon} />
+              <img className="mr-12" src={ChecklistIcon} />
               <span>2 Year Contracts</span>
             </div>
           </li>
