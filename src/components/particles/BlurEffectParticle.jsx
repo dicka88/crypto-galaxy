@@ -2,8 +2,8 @@ import propTypes from "prop-types"
 import styled from "styled-components"
 
 export default function BlurEffectParticle({
-  width = '100px',
-  height = '100px',
+  width = '150px',
+  height = '150px',
   left,
   top,
   bottom,
@@ -14,7 +14,7 @@ export default function BlurEffectParticle({
 }) {
 
   const Blur = styled.span`
-    filter: blur(350px);
+    filter: blur(150px);
     position: absolute;
     width: ${width};
     height: ${height};
