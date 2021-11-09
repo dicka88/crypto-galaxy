@@ -2,7 +2,7 @@
 
 A beauty landing page for crypto mining website, design by cool, creative and genius person, he is @calvinnadeak,
 
-## Screenshoot
+## Screenshot
 
 ![Crypto Galaxy](https://cdn.statically.io/screenshot/cryptogalaxy.netlify.app)
 
